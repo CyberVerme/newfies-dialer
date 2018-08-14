@@ -90,6 +90,7 @@ func_install_deps() {
             apt-get -y install unixodbc-dev odbc-postgresql
             ;;
         'CENTOS')
+            yum install epel-release
             yum -y update
             yum -y install autoconf automake bzip2 cpio curl curl-devel curl-devel expat-devel fileutils gcc-c++ gettext-devel gnutls-devel libjpeg-devel libogg-devel libtiff-devel libtool libvorbis-devel make ncurses-devel nmap openssl openssl-devel openssl-devel perl patch unixODBC unixODBC-devel unzip wget zip zlib zlib-devel lame-devel
             yum -y install git
